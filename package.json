@@ -1,6 +1,6 @@
 {
   "name": "graphql-buildquery",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Builds GraphQL queries",
   "main": "lib/index.js",
   "jsnext:main": "es6/index.js",
