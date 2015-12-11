@@ -11,7 +11,7 @@
     "build:es6": "env BABEL_ENV=es6 babel src --out-dir es6",
     "build": "npm run clean && npm run build:lib && npm run build:es6",
     "test": "mocha --require babel-register --recursive src",
-    "prepublish": "npm run build:lib"
+    "prepublish": "npm run build"
   },
   "author": "eugene1g",
   "license": "MIT",
