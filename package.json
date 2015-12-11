@@ -7,8 +7,9 @@
   "repository": "https://github.com/eugene1g/graphql-buildquery",
   "scripts": {
     "clean": "rimraf lib es6",
-    "build:lib": "babel src --out-dir lib",
-    "build:es6": "babel src --out-dir es6",
+    "build:lib": "env BABEL_ENV=lib babel src --out-dir lib",
+    "build:es6": "env BABEL_ENV=es6 babel src --out-dir es6",
+    "build": "npm run clean && npm run build:lib && npm run build:es6",
     "test": "mocha --require babel-register --recursive src",
     "prepublish": "npm run build:lib"
   },
@@ -16,11 +17,11 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "6.*",
-    "babel-plugin-transform-es2015-parameters": "6.3.13",
-    "babel-plugin-transform-es2015-spread": "6.3.14",
+    "babel-plugin-transform-es2015-parameters": "6.*",
+    "babel-plugin-transform-es2015-spread": "6.*",
     "babel-register": "6.*",
     "chai": "3.*",
     "mocha": "2.*",
-    "rimraf": "2.4.4"
+    "rimraf": "2.*"
   }
 }
