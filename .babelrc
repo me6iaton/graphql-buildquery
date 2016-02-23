@@ -1,22 +1,10 @@
 {
   "env": {
     "development": {
-      "plugins": [
-        "transform-es2015-modules-commonjs",
-        "transform-es2015-spread",
-        "transform-es2015-parameters",
-        "transform-es2015-arrow-functions",
-        "transform-es2015-block-scoping"
-      ]
+      "presets": ["es2015"]
     },
     "lib": {
-      "plugins": [
-        "transform-es2015-modules-commonjs",
-        "transform-es2015-spread",
-        "transform-es2015-parameters",
-        "transform-es2015-arrow-functions",
-        "transform-es2015-block-scoping"
-      ]
+      "presets": ["es2015"],
     },
     "es6": {
       "plugins": [

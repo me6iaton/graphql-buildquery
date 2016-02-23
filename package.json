@@ -1,6 +1,6 @@
 {
   "name": "graphql-buildquery",
-  "version": "0.9.1",
+  "version": "0.9.3",
   "description": "Builds GraphQL queries",
   "main": "lib/index.js",
   "jsnext:main": "es6/index.js",
@@ -17,11 +17,7 @@
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "6.*",
-    "babel-plugin-transform-es2015-arrow-functions": "6.*",
-    "babel-plugin-transform-es2015-block-scoping": "6.*",
-    "babel-plugin-transform-es2015-modules-commonjs": "6.*",
-    "babel-plugin-transform-es2015-parameters": "6.*",
-    "babel-plugin-transform-es2015-spread": "6.*",
+    "babel-preset-es2015": "6.*",
     "babel-register": "6.*",
     "chai": "3.*",
     "mocha": "2.*",
